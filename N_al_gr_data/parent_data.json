@@ -1,0 +1,57 @@
+{
+    "net": {
+        "name": "N_al_cl",
+        "total_epoch": 0,
+        "parent": null,
+        "loss": 0.0,
+        "arch": {
+            "layers": [
+                {
+                    "num_of_neurons": 1024,
+                    "activation": "linear"
+                },
+                {
+                    "num_of_neurons": 100,
+                    "activation": "sigmoid"
+                },
+                {
+                    "num_of_neurons": 100,
+                    "activation": "sigmoid"
+                },
+                {
+                    "num_of_neurons": 1024,
+                    "activation": "sigmoid"
+                }
+            ],
+            "connections": [
+                {
+                    "type": "full",
+                    "input_dim": 1024,
+                    "output_dim": 100
+                },
+                {
+                    "type": "full",
+                    "input_dim": 100,
+                    "output_dim": 100
+                },
+                {
+                    "type": "full",
+                    "input_dim": 100,
+                    "output_dim": 1024
+                }
+            ]
+        },
+        "iq_test": {
+            "iq": 0,
+            "iq_min": 0,
+            "iq_max": 0,
+            "num_of_tests": 0
+        }
+    },
+    "train_parameters": {
+        "teacher": 0,
+        "learning_rate": 0,
+        "error": 0
+    },
+    "description": ""
+}
